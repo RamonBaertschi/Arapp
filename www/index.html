@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Blank App</title>
-  </head>
-  <body>
-    <h1>Hallo Fabio Pitta</h1>
-    <h2>Test</h2>
-    <script type="text/javascript" src="cordova.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Blank App</title>
+</head>
+
+<body>
+  <h1>Hallo Fabio</h1>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyARZwNlDTGe9K7lt6ygtIQ0VSFCZZKuUkk",
+      authDomain: "project-8591910623896187418.firebaseapp.com",
+      databaseURL: "https://project-8591910623896187418.firebaseio.com",
+      projectId: "project-8591910623896187418",
+      storageBucket: "project-8591910623896187418.appspot.com",
+      messagingSenderId: "834584821895"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!--Standardmässig drin cordova.js wird aber nicht gefunden-->
+
+  <script type="text/javascript" src="cordova.js"></script>
+
+
+
+</body>
+
 </html>
