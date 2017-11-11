@@ -15,7 +15,6 @@
             orientation: landscape;
         }
     </style>
-    <link rel="icon" sizes="192x192" href="img/icon-iphone.png">
     <link rel="stylesheet" type="text/css" href="css/ratchet.min.css" />
     <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.min.css" />
     <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css" />
@@ -25,7 +24,25 @@
 
 <body>
 
-    <h1>Test</h1>
+    <header class="bar bar-nav">
+        <h1 class="title">AutooR</h1>
+      </header>
+
+      <button class="btn">Spiel erstellen</button>
+      <button class="btn">Am Spiel teilnehmen</button>
+
+
+      <a href="#myModalexample" class="btn">Anleitung</a>
+      <div id="myModalexample" class="modal">
+        <header class="bar bar-nav">
+          <a class="icon icon-close pull-right" href="#myModalexample"></a>
+          <h1 class="title">Spielanleitung</h1>
+        </header>
+      
+        <div class="content">
+          <p class="content-padded">Spielleiter:....</p>
+        </div>
+      </div>
 
     <script type="text/javascript" src="js/ratchet.min.js"></script>
     <!-- phantom library, needed for Cordova api calls, added during build -->
