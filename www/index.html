@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8" />
+        <!--Autom. Telefonnummer Erkennung aus-->
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta nmae="apple-mobile-web-app-capable" content="yes" />
         <meta http-equiv="Content-Security-Policy" content="default-src * gap:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="css/buttons.css" />
-        <title>PhoneGap Day Wikitude AR Demo</title>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="apple-touch-icon" href="img/icon-iphone.png" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>AutdooR</title>
     </head>
     <body>
         <h1>Test</h1>
+        <script type="text/javascript" src="js/ratchet.min.js"></script>
+        <!-- phantom library, needed for Cordova api calls, added during build -->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
