@@ -5,13 +5,27 @@
 }
 
  
- 
+ /*Hintergrund*/ 
 .content{
-    /*Hintergrundbild*/ 
-background-image: url(../images/xxx.png);
+        background: linear-gradient(
+        rgba(231, 168, 17, 0.6), 
+        rgba(231, 168, 17, 1)
+      ),
+      url(../img/bg.jpg);
+            
 background-position: center center;
 background-size:cover;
 height:100%;
 min-height:100%;
-background-color: rgba(231, 168, 17, 1)
 }
+
+.bar.bar-nav{
+    background: black;
+}
+/*Titel in Navbar zentrieren*/
+.title{
+    text-align: center;
+    color: white;
+}
+
+
