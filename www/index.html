@@ -11,17 +11,14 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
     <meta name="mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Security-Policy" content="default-src * gap:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-    <style>
-        @viewport {
-            orientation: landscape;
-        }
-    </style>
     <!-- Include the compiled Ratchet CSS -->
     <link href="css/ratchet.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+ <!-- Include the compiled Ratchet JS -->
+ <script src="js/ratchet.min.js"></script>
    
 </head>
-
 <body>
 
     <!-- Make sure all your bars are the first things in your <body> -->
@@ -29,26 +26,22 @@
         <h1 class="title">AutdooR</h1>
     </header>
 
-    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-    <div class="content">
-        <!--Wichtig muss hier p sein nicht div-->
+   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+   <div class="content">
         <p class="content-padded">
-           
-
-        <a href="admin/admin01.html" data-transition="slide-in"><button class="btn">Spiel erstellen</button>
-        </a>
-
-
+        Thanks for downloading Ratchet. </p>
+      
+  
+  <a href="admin/admin01.html" data-transition="slide-in"><button class="btn">Spiel erstellen</button></a>
         <button class="btn">An einem Spiel teilnehmen</button>
 
-
+<!--Modal-->
         <a href="#myModalexample" class="btn">Open modal</a>
         <div id="myModalexample" class="modal">
             <header class="bar bar-nav">
                 <a class="icon icon-close pull-right" href="#myModalexample"></a>
                 <h1 class="title">Modal</h1>
             </header>
-
             <div class="content">
                 <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -56,13 +49,11 @@
             </div>
         </div>
 
-       </p>
+       
     </div>
 
 
 
- <!-- Include the compiled Ratchet JS -->
- <script src="js/ratchet.min.js"></script>
 
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
