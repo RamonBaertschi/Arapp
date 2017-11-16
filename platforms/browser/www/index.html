@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <title>AutdooR</title>
     <!--Autom. Telefonnummer Erkennung aus-->
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
@@ -15,64 +16,65 @@
             orientation: landscape;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="css/ratchet.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>AutdooR</title>
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
 </head>
+
 <body>
 
+    <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
         <h1 class="title">AutdooR</h1>
     </header>
 
-
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
-        <div class="content-padded">
+        <!--Wichtig muss hier p sein nicht div-->
+        <p class="content-padded">
+           
 
-            <button class="btn"><a class "navigate-right" href="admin01.html" data-transition="slide-in">Spiel erstellen</a></button>
-            <button class="btn">Am Spiel teilnehmen</button>
-
-            <a class="navigate-right" href="admin/admin01.html" data-transition="fade">Load new page with push</a>
+        <a href="admin/admin01.html" data-transition="slide-in"><button class="btn">Spiel erstellen</button>
+        </a>
 
 
-<p>&nbsp;</p>
-<div class="content">
-    <div class="card">
-      <ul class="table-view">
-        <li class="table-view-cell">
-          <a class="navigate-right" href="admin/admin01.html" data-transition="slide-in">
-            Load new page with push
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+        <button class="btn">An einem Spiel teilnehmen</button>
 
-            <!--Modal-->
-            <a href="#myModalexample" class="btn">Anleitung</a>
-            <div id="myModalexample" class="modal">
-                <header class="bar bar-nav">
-                    <a class="icon icon-close pull-right" href="#myModalexample"></a>
-                    <h1 class="title">Spielanleitung</h1>
-                </header>
 
-                <div class="content">
-                    <p class="content-padded">Spielleiter:.... Spielteilnehmer:... Haftungshinweis:... Lorem ipsum dolor sit amet, consetetur sadipscing
-                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum d
-                    </p>
-                </div>
+        <a href="#myModalexample" class="btn">Open modal</a>
+        <div id="myModalexample" class="modal">
+            <header class="bar bar-nav">
+                <a class="icon icon-close pull-right" href="#myModalexample"></a>
+                <h1 class="title">Modal</h1>
+            </header>
+
+            <div class="content">
+                <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut.</p>
             </div>
-
-
         </div>
+
+
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    <a class="navigate-right" href="admin/admin01.html" data-transition="slide-in">
+                        Load new page with push
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+       </p>
     </div>
 
 
-    <script type="text/javascript" src="js/ratchet.min.js"></script>
+
+ <!-- Include the compiled Ratchet JS -->
+ <script src="js/ratchet.min.js"></script>
+
     <!-- phantom library, needed for Cordova api calls, added during build -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
