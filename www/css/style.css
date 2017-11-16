@@ -28,4 +28,12 @@ min-height:100%;
     color: white;
 }
 
+.btn{
+   background: rgb(0, 0, 0); 
+   color: white;
+   border: none;
+}
+#modal{
+    background: #eaeaea;
+}
 
