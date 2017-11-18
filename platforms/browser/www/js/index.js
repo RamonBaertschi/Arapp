@@ -50,9 +50,10 @@ var app = {
   }
 };
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-
+function onAppReady() {
+  if (navigator.splashscreen && navigator.splashscreen.hide) { // Cordova API detected
+    navigator.splashscreen.hide();
+  }
   // Tenmp Kamera
   document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
@@ -72,3 +73,5 @@ function onDeviceReady() {
     }
   }
 }
+
+document.addEventListener("app.Ready", onAppReady, false);
