@@ -59,8 +59,10 @@ function onAppReady() {
 
   function cameraTakePicture() {
     navigator.camera.getPicture(onSuccess, onFail, {
+      alert("Fuck Off");
       quality: 100,
-      destinationType: Camera.DestinationType.DATA_URL sourceType: Camera.PictureSourceType.CAMERA alert("Fuck Off");
+      destinationType: Camera.DestinationType.DATA_URL,
+      sourceType: Camera.PictureSourceType.CAMERA
     });
 
     function onSuccess(imageData) {
