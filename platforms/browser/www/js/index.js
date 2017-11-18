@@ -50,21 +50,25 @@ var app = {
   }
 };
 
-// Tenmp Kamera
-document.getElementById("kamera").addEventListener("click", cameraTakePicture);
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
 
-function cameraTakePicture() {
-  navigator.camera.getPicture(onSuccess, onFail, {
-    quality: 100,
-    destinationType: Camera.DestinationType.DATA_URL
-  });
+  // Tenmp Kamera
+  document.getElementById("kamera").addEventListener("click", cameraTakePicture);
 
-  function onSuccess(imageData) {
-    var image = document.getElementById('myImage');
-    image.src = "data:image/jpeg;base64," + imageData;
-  }
+  function cameraTakePicture() {
+    navigator.camera.getPicture(onSuccess, onFail, {
+      quality: 100,
+      destinationType: Camera.DestinationType.DATA_URL sourceType: Camera.PictureSourceType.CAMERA
+    });
 
-  function onFail(message) {
-    alert('Failed because: ' + message);
+    function onSuccess(imageData) {
+      var image = document.getElementById('myImage');
+      image.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    function onFail(message) {
+      alert('Failed because: ' + message);
+    }
   }
 }
