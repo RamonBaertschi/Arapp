@@ -56,6 +56,7 @@ function onAppReady() {
   }
   // Tenmp Kamera
   document.getElementById("kamera").addEventListener("click", cameraTakePicture);
+  alert("Fuck You");
 
   function cameraTakePicture() {
     navigator.camera.getPicture(onSuccess, onFail, {
