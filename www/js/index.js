@@ -56,12 +56,11 @@ function onAppReady() {
   }
   // Tenmp Kamera
   document.getElementById("kamera").addEventListener("click", cameraTakePicture);
-  alert("Fuck You");
 
   function cameraTakePicture() {
     navigator.camera.getPicture(onSuccess, onFail, {
       quality: 100,
-      destinationType: Camera.DestinationType.DATA_URL sourceType: Camera.PictureSourceType.CAMERA
+      destinationType: Camera.DestinationType.DATA_URL sourceType: Camera.PictureSourceType.CAMERA alert("Fuck Off");
     });
 
     function onSuccess(imageData) {
